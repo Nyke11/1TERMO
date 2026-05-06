@@ -114,3 +114,78 @@
 #    print("Aprovado")
 # elif nota >= 9:
 #    print("Excelente!")
+
+# Corrigido
+# nota = 9.5
+# if nota >= 7:
+#     print("Aprovado")
+#     if nota >= 9:
+#         print("Excelente")
+
+# Melhorado
+# nota = float(input("Digite a nota do aluno: "))
+# if nota >= 7:
+#     print("Aprovado")
+#     if nota >= 9:
+#         print("Excelente")
+# elif nota >= 5:
+#     print("Recuperção")
+# else:
+#     print("Reprovado")
+
+# 8. O Contador de 1 a 5
+# Objetivo: Mostrar na tela os números 1, 2, 3, 4 e 5.
+# # Erro
+# for i in range(5):
+#   print(i)
+
+# Corrigido
+# for i in range(1, 6):
+#     print(i)
+
+# Melhorada
+# print("Contador de 1 a 5:")
+# for numero in range(1,6):
+#     print(numero)
+
+# 9. O Loop Eterno
+# Erro
+# tentativas = 1
+# while tentativas <= 3:
+#   print("Tentando conectar...")
+#    O código deveria parar após 3 tentativas
+
+# Corrigido
+# tentativas = 1
+# while tentativas <= 3:
+#     print("Tentando conectar...")
+#     tentativas = tentativas + 1
+
+# Melhorado
+# tentativas = 1
+# while tentativas <= 3:
+#     print(f"tentativas {tentativas}: tentando conectar...")
+#     tentativas += 1
+#     print("\n Numero maximo de tentativas atingida. Processo finalizado")
+
+# 10. A Senha Teimosa
+# O programa deve pedir a senha até que o usuário digite "python123"
+# Erro
+# senha = ""
+# while senha == "python123":
+#   senha = input("Digite a senha secreta: ")
+# print("Acesso concedido!")
+
+# Corrigido
+# senha = ""
+# while senha != "python123":
+#     senha =input("Digite a senha secreta: ")
+# print("Acesso concedido!")
+
+# Melhorado
+senha = ""
+while senha != "python123":
+    senha = input("Digite a senh secreta: ")
+    if senha != "python123":
+        print("Senha incorreta, tente novamente: ")
+print("\n Aceso concedido!")
