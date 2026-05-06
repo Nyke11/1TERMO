@@ -183,9 +183,9 @@
 # print("Acesso concedido!")
 
 # Melhorado
-senha = ""
-while senha != "python123":
-    senha = input("Digite a senh secreta: ")
-    if senha != "python123":
-        print("Senha incorreta, tente novamente: ")
-print("\n Aceso concedido!")
+# senha = ""
+# while senha != "python123":
+#     senha = input("Digite a senh secreta: ")
+#     if senha != "python123":
+#         print("Senha incorreta, tente novamente: ")
+# print("\n Aceso concedido!")
