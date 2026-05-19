@@ -67,43 +67,43 @@
 
 # append: Adiciona um item ao final de uma lista.
 
-while True:
-    try:
-        print("Calculadora de Média em lista")    
-        numero = int(input("Digite um número inteiro para definir o tamanho da lista: "))
-        lista = []
-        for listagem in range(numero):
-            numero_lista = float(input(f"Digite o número {listagem + 1}: "))
-            lista.append(numero_lista)
+# while True:
+#     try:
+#         print("Calculadora de Média em lista")    
+#         numero = int(input("Digite um número inteiro para definir o tamanho da lista: "))
+#         lista = []
+#         for listagem in range(numero):
+#             numero_lista = float(input(f"Digite o número {listagem + 1}: "))
+#             lista.append(numero_lista)
 
-        media = sum(lista) / len(lista)
-        print(f"A média dos números é: {media}")
-        break
-    except ValueError:
-            print("Erro: Você deve digitar um número inteiro válido. Tente novamente.")
-            break
+#         media = sum(lista) / len(lista)
+#         print(f"A média dos números é: {media}")
+#         break
+#     except ValueError:
+#             print("Erro: Você deve digitar um número inteiro válido. Tente novamente.")
+#             break
         
-    except ZeroDivisionError:
-            print("Erro: A lista de números está vazia. Não é possível calcular a média.")  
-            break
-print("Programa encerrado.")
+#     except ZeroDivisionError:
+#             print("Erro: A lista de números está vazia. Não é possível calcular a média.")  
+#             break
+# print("Programa encerrado.")
 
 # Exercicio 3:
 # Escreva um programa que solicite ao usuário uma lista de palavras e conte quantas vezes cada palavra aparece na lista. O programa deve tratar os seguintes erros:
 # - ValueError: se o usuário digitar um valor que não seja uma string.
 
 
-try:
-    palavras = input("Digite uma lista de palavras separadas por espaço ... ").split()    
-    contagem = {}
-    for palavra in palavras:
-        if palavra in contagem:
-            contagem[palavra] += 1
-        else:
-            contagem[palavra] = 1
-    print("Contagem de palavras:")
-    for palavra, contagem in contagem.items():
-        print(f"{palavra}: {contagem}")
-except ValueError:
-    print("Erro: Entrada inválida. Por favor, digite uma lista de palavras separadas por espaço.")
+# try:
+#     palavras = input("Digite uma lista de palavras separadas por espaço ... ").split()    
+#     contagem = {}
+#     for palavra in palavras:
+#         if palavra in contagem:
+#             contagem[palavra] += 1
+#         else:
+#             contagem[palavra] = 1
+#     print("Contagem de palavras:")
+#     for palavra, contagem in contagem.items():
+#         print(f"{palavra}: {contagem}")
+# except ValueError:
+#     print("Erro: Entrada inválida. Por favor, digite uma lista de palavras separadas por espaço.")
 
