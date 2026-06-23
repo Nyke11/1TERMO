@@ -362,7 +362,7 @@
 # janela.geometry("800x400")
 # janela.configure(bg="#FF5E46")
 
-# numero = tk.Label(janela, text="  :)")
+#numero = tk.Label(janela, text=" Contagem Regressiva :)")
 # numero.grid(row=0, column=0, pady=10, padx=10)
 
 # numero = tk.Entry(janela, font=("Arial", 12))
